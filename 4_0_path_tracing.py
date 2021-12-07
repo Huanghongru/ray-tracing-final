@@ -89,11 +89,6 @@ def ray_color(ray):
                 brightness /= p_RR
     return color_buffer
 
-
-# direction controller
-step = 0.5
-dx = {"w": 0, "a": 1, "s": 0, "d": -1, "UP": 0, "DOWN": 0, "LEFT": 1, "RIGHT": -1}
-dy = {"w": 1, "a": 0, "s": -1, "d": 0, "UP": 1, "DOWN": -1, "LEFT": 0, "RIGHT": 0}
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Naive Ray Tracing')
     parser.add_argument(
